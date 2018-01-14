@@ -156,7 +156,7 @@ TicTacToe.prototype.detectWinner = function() {
         return false;
     };
 
-    document.getElementById('output').innerHTML = JSON.stringify(this.config.boardValues, null, '\t');
+    // document.getElementById('output').innerHTML = JSON.stringify(this.config.boardValues, null, '\t');
 
     var result = checkDiagonal();
     if (result) return result;
@@ -177,7 +177,7 @@ TicTacToe.prototype.resetBoard = function() {
     this.config.winner = null;
     this.createBoard(this.config.container, this.config.rowsCols);
 
-    document.getElementById('output').innerHTML = JSON.stringify(this.config.boardValues, null, '\t');
+    // document.getElementById('output').innerHTML = JSON.stringify(this.config.boardValues, null, '\t');
 };
 
 TicTacToe.prototype.init = function(container, size) {
